@@ -6,8 +6,8 @@ var env = require('../../../../helpers/env'),
     _ = require('underscore'),
     rimraf = require('rimraf'),
     path = require('path');
-
-describe('localization - locale', function () {
+// TODO: unskip when bug fixed: https://github.com/appium/appium-ios-simulator/issues/7
+describe.skip('localization - locale', function () {
   this.timeout(env.MOCHA_INIT_TIMEOUT);
 
   after(function () {

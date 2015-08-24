@@ -3,7 +3,8 @@
 var setup = require("../../common/setup-base"),
     desired = require('./desired');
 
-describe('uicatalog - contexts @skip-ios6', function () {
+// TODO: this requires webcontext code to be merged in
+describe.skip('uicatalog - contexts @skip-ios6', function () {
   var driver;
   setup(this, desired).then(function (d) { driver = d; });
 
